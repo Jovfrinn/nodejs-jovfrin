@@ -15,4 +15,10 @@ const {getGoals, setGoals} = require('../controllers/goalContoller')
 router.get('/', getGoals)
 router.post('/', setGoals)
 
+router.put('/',(req,res) => {
+    res.json({
+        message: "Ini Update"
+    })    
+})
+
 module.exports = router
